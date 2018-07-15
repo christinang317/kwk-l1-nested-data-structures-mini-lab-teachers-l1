@@ -52,7 +52,7 @@ def city_populations(cities)
   cities.each do |city, data|
     data.each do |key, value|
       puts "The #{key} of #{city} is #{value}"
-      if attribute == :population
+      if key == :population
         num += value
       end
     end
