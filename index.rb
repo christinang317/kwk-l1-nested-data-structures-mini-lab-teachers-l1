@@ -11,7 +11,7 @@ def sandwich_request(ingredients, order)
   contains = false
   order.each do |item|
     ingredients.each do |lists|
-      if lists.include?(list)
+      if lists.include?(item)
         contains = true
       end
     end
