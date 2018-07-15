@@ -9,13 +9,13 @@ ingredients = [
 def sandwich_request(ingredients, order)
   # your code here!
   contains = false
-  order.each do |ord|
-    ingredients.each do |ing|
-      if ing.include?(ord)
-        inc = true
+  order.each do |item|
+    ingredients.each do |lists|
+      if lists.include?(list)
+        contains = true
       end
     end
-    if inc == false
+    if contains == false
       return false
     end
   end
