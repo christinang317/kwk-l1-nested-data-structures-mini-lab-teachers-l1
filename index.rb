@@ -15,6 +15,7 @@ def sandwich_request(ingredients, order)
         contains = true
       end
     end
+  end 
     if contains == false
       return false
     end
