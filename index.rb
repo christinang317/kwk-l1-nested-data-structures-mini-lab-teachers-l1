@@ -20,7 +20,7 @@ def sandwich_request(ingredients, order)
   if !found
     return false
   end
-end 
+end
 
   return true
 
@@ -52,4 +52,14 @@ cities = {
 
 def city_populations(cities)
   # your code here!
+  num = 0
+  cities.each do |city, data|
+    data.each do |attribute, value|
+      puts "The #{attribute} of #{city} is #{value}"
+      if attribute == :population
+        num += value
+      end
+    end
+  end
+  num
 end
