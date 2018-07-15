@@ -11,11 +11,10 @@ def sandwich_request(ingredients, order)
   contains = false
   order.each do |item|
     ingredients.each do |lists|
-      if lists == item
+      if lists.include?(item)
         contains = true
       end
     end
-
     if contains == false
       return false
     end
